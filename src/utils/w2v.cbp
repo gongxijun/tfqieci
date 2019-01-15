@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="w2v"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\third_party\;CMake Files\third_party\pybind11\;CMake Files\third_party\pybind11\tools\;CMake Files\src\;CMake Files\src\base\;CMake Files\src\word2vec\;CMake Files\src\utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gxjun/CLionProjects/tfqieci/src/utils"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="w2v">
+				<Option output="/home/gxjun/CLionProjects/tfqieci/output/lib/w2v.cpython-35m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gxjun/CLionProjects/tfqieci/src/utils"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gxjun/anaconda2/pkgs/tensorflow-gpu-1.2.1-np113py27_0/lib/python2.7/site-packages/tensorflow/include"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/include"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/third_party"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/include"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 w2v"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="w2v/fast">
+				<Option output="/home/gxjun/CLionProjects/tfqieci/output/lib/w2v.cpython-35m-x86_64-linux-gnu.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gxjun/CLionProjects/tfqieci/src/utils"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/gxjun/anaconda2/pkgs/tensorflow-gpu-1.2.1-np113py27_0/lib/python2.7/site-packages/tensorflow/include"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/include"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/third_party"/>
+					<Add directory="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/include"/>
+					<Add directory="/usr/include/python3.5m"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 w2v/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/gxjun/CLionProjects/tfqieci/src/utils/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/utils/py_word2vec_vob.cc">
+			<Option target="w2v"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/utils/word2vec_vob.cc">
+			<Option target="w2v"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\pybind11\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\pybind11\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/tools/pybind11Tools.cmake">
+			<Option virtualFolder="CMake Files\third_party\pybind11\tools\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/tools/FindPythonLibsNew.cmake">
+			<Option virtualFolder="CMake Files\third_party\pybind11\tools\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/tools/pybind11Tools.cmake">
+			<Option virtualFolder="CMake Files\third_party\pybind11\tools\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/third_party/pybind11/tools/FindPythonLibsNew.cmake">
+			<Option virtualFolder="CMake Files\third_party\pybind11\tools\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\base\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/word2vec/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\word2vec\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\utils\"/>
+		</Unit>
+		<Unit filename="/home/gxjun/CLionProjects/tfqieci/src/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

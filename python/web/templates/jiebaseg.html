@@ -1,0 +1,61 @@
+<!doctype html>
+<title>结巴自定词典切词模型测试页面</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="/static/js/jquery-2.1.1.min.js" charset="UTF-8"></script>
+    <script src="/static/js/index.js" charset="UTF-8"></script>
+
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
+    <style type="text/css">
+        .div-inline{display: inline-block;}
+        .button-size {
+            -webkit-appearance:button;
+            height: 40px;
+            width: 160px;
+            background-color:#FFF;
+            color:#666;
+            font-weight:bold;
+            border: solid #666 1px;
+            font-size: 14px;
+                        }
+         .local_clear { clear: both; float: none; }
+    </style>
+</head>
+
+<body>
+    <form action="/jieba_seg_submit" method="post">
+       <h3 >原文</h3>
+        <hr/>
+        <div class = "local_clear" align="center">
+            <textarea id="origin_text_infomation" class="text" cols="100" rows ="12" name="origin_text_infomation">
+                {{  results[0] }}
+            </textarea>
+        </div>
+        <br/>
+        <h3>切词结果</h3>
+        <hr/>
+        <div class = "local_clear">
+                    <input type="hidden" name="origin_text" value="{{ origin_text }}">
+                    <div class= "div-inline local_clear">
+                    <h2 align="center">自定义结巴分词</h2>
+                    <textarea id="jieba_text_infomation" class="text" cols="86" rows ="20" name="jieba_text_infomation">
+                         {{ results[1] }}
+                     </textarea>
+                    </div>
+            
+                    <div class="div-inline local_clear">
+                    <h2 align="center">w2c+BiLSTM+CRF分词</h2>
+                    <textarea id="add_userdict_text_infomation" class="text" cols="86" rows ="20" name="add_userdict_text_infomation">
+                         {{ results[2] }}
+                    </textarea>
+                    </div>
+        </div>
+        <br/>
+        <div align="center">
+            <input class="button-size " type="submit" value="切词">
+            <input class="button-size" type="button" value="刷新" onClick="window.location.reload()">
+        </div>
+
+    </form>
+</body>
